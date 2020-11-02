@@ -1,14 +1,12 @@
 import React from 'react';
-import { 
-  View, 
-  Text, 
-  } from 'react-native';
+import { View, Text, } from 'react-native';
 
   import { NavigationContainer } from '@react-navigation/native';
   import { createStackNavigator } from '@react-navigation/stack';
   import HomePage from './pages/home-page/home-page';
   import ContactPage from './pages/contact-page/contact-page';
   import AboutPage from './pages/about-page/about-page';
+import NewsDetail from './pages/news-detail/news-detail';
 
   const Stack = createStackNavigator();
 
@@ -19,6 +17,7 @@ import {
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="Contact" component={ContactPage} />
         <Stack.Screen name="About" component={AboutPage} />
+        <Stack.Screen name="NewsDetail" component={NewsDetail} />
         </Stack.Navigator>
       </NavigationContainer>
     );
